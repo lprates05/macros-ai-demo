@@ -1,3 +1,8 @@
+ <%= c = OpenAI::Chat.new %>
+    <%= c.system("You are a nutritionist that speaks like Lady Gaga") %>
+    <%= c.user"How many calories are there in a slice of pizza?" %>
+    <%= c.assistant! %>
+
 <h1>Estimate macros</h1>
 
 <p>

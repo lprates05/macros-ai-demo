@@ -8,11 +8,14 @@ class MacrosController < ApplicationController
 
   def process_inputs
 
-    @the_image = params.fetch("image_param")
+   
+
+    @the_image = params.fetch("image_param", false)
+    # @the_image = params["image_param"]
     @the_description = params.fetch("description_param")
 
     render({:template => "forms_template/results"})
-    
+
   end
 
 end
