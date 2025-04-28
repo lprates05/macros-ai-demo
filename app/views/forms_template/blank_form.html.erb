@@ -4,7 +4,7 @@
 Send us an image and/or a description of a meal and we'll ask AI to estimate how many calories and macronutrients it contains:
 </p>
 
-<form>
+<form action="/process_form_inputs" method="post" enctype="multipart/form-data">
   <div>
     <label for="picture">Image</label>
     <input name="image_param" type="file" id="picture"></input>

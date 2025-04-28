@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   post("/solutions/process_form", { :controller => "solutions", :action => "process_inputs" })
 
   get("/blank_form",{:controller => "macros", :action => "display_form"})
+
+  post("/process_form_inputs", { :controller => "macros", :action => "process_inputs" })
   
 end
